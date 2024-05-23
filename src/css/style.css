@@ -362,7 +362,6 @@ textarea:focus {
 .checkbox:checked + span {
     background-image: url("../images/Icon-Check.svg");
     background-size: 13px 9.5px;
-    /*background-size: contain;*/
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -377,4 +376,63 @@ textarea:focus {
     box-shadow: 0 3px 6px rgba(255, 0, 0, 0.3);
     font-size: 14px;
     padding: 10px 52px;
+}
+
+/*FOOTER*/
+.page__footer {
+    background: var(--gray400-color);
+    height: 233px;
+}
+.page__footer .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.footer-logo {
+    width: 200px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: var(--font-weight-bold);
+    font-size: 25px;
+}
+.footer-logo__icon {
+    width: 16.5px;
+    height: auto;
+}
+.footer-logo span {
+    color: var(--red-color);
+    font-weight: var(--font-weight-extrabold);
+    padding-right: 8px;
+    padding-left: 7.5px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+.page__footer-nav {
+    display: flex;
+    gap: 141px;
+}
+.page__footer-nav-link {
+    text-decoration: none;
+    font-family: var(--primary-font), sans-serif;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: var(--font-weight-bold);
+}
+.page__footer-nav-link:hover {
+    color: var(--red-color);
+}
+.page__footer-copyright {
+    color: var(--gray100-color);
+    font-size: 12px;
+    font-weight: var(--font-weight-light);
+    align-self: flex-end;
+    text-transform: capitalize;
 }
