@@ -246,8 +246,13 @@
 .service-article {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 15px;
     text-align: center;
+}
+.service-article__photo {
+    width: 170px;
+    height: 170px;
 }
 .service-article__title {
     color: var(--white-color);
